@@ -2,7 +2,7 @@ const express =require("express");
 const router =express.Router();
 const Feedback =require("../models/Feedback");
 
-router.post("/", async(req,res) => {
+router.post("/",async(req,res) => {
   try {
     const { studentName, courseName,message,rating } = req.body;
     if (!studentName|| !courseName|| !message|rating ===undefined) {

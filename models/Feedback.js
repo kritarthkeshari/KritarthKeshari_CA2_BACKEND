@@ -3,7 +3,7 @@ const feedbackSchema =new mongoose.Schema(
   {
     studentName: {
       type:String,
-      required: true
+      required:true
     },
     courseName: {
       type: String,
